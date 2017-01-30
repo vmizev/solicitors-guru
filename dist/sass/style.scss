@@ -3,6 +3,46 @@
 @import "reset";
 @import "default-clases";
 @import "layout";
+@import "sprite";
+@include sprites($spritesheet-sprites);
+
+.inner{
+	@extend %vertical-align;
+	height: calc( 100vh - 80px );
+	background: url('../img/inner-bg.jpg') no-repeat top center;
+	background-size: cover;
+	text-align: center;
+
+	.inner-block{
+		color: #fff;
+
+		h1{
+			font-size: 72px;
+			font-weight: 700;
+			margin-bottom: 30px;
+		}
+		& > span {
+			font-size: 28px;
+			font-weight: 300;
+		}
+		.inner-form{
+			padding: 25px 37px;
+			background: rgba(0, 0, 0, .45);
+			margin-top: 40px;
+
+			.first-form {
+				.form-control{
+					width: 325px;
+				}
+			}
+			input, select{
+				& + input{
+					margin-left: 4px;
+				}
+			}
+		}
+	}
+}
 
 
 

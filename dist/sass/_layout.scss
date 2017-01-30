@@ -1,6 +1,72 @@
 @import "custom-variables";
 
+.container{
+	width: $desctopContainerWidth;
+	margin: 0 auto;
+}
 
+.icon{
+	display: inline-block;
+}
+// standart dorm element style
+.form-control {
+	display: inline-block;
+	height: 57px;
+	padding: 0 15px;
+	border-radius: 2px;
+	color: $formControlTextColor;
+	font-size: 16px;
+}
+.form-btn {
+	display: inline-block;
+	height: 57px;
+	border-radius: 2px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	background: $generalOrange;	
+	padding: 0 27px;
+	text-transform: uppercase;
+	&:hover{
+		background: $generalOrangeHover;
+	}
+}
+
+.header{
+	height: $desktopHeaderHeight;
+	width: 100%;
+	background: #fff; 
+
+	.logo{
+		float: left;
+		margin-top: 15px;
+	}
+
+	.header-nav{
+		@extend %vertical-align;
+		float: right;
+		margin: 27px 200px 0 0;
+
+		li{
+			display: inline-block;
+
+			a {
+				font-size: 16px;
+				&:hover{
+					color: $generalOrange;
+				}
+				span.search-ico{
+					margin-left: 12px;
+				}
+			}
+			
+		}
+		li + li{
+			margin-left: 28px;
+		}
+	}
+
+}
 
 
 

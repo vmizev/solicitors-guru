@@ -1,0 +1,200 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$admin-ico-name: 'admin-ico';
+$admin-ico-x: 70px;
+$admin-ico-y: 97px;
+$admin-ico-offset-x: -70px;
+$admin-ico-offset-y: -97px;
+$admin-ico-width: 29px;
+$admin-ico-height: 30px;
+$admin-ico-total-width: 132px;
+$admin-ico-total-height: 131px;
+$admin-ico-image: '../img/sprite.png';
+$admin-ico: (70px, 97px, -70px, -97px, 29px, 30px, 132px, 131px, '../img/sprite.png', 'admin-ico', );
+$apartment-ico-name: 'apartment-ico';
+$apartment-ico-x: 0px;
+$apartment-ico-y: 62px;
+$apartment-ico-offset-x: 0px;
+$apartment-ico-offset-y: -62px;
+$apartment-ico-width: 35px;
+$apartment-ico-height: 35px;
+$apartment-ico-total-width: 132px;
+$apartment-ico-total-height: 131px;
+$apartment-ico-image: '../img/sprite.png';
+$apartment-ico: (0px, 62px, 0px, -62px, 35px, 35px, 132px, 131px, '../img/sprite.png', 'apartment-ico', );
+$case-ico-name: 'case-ico';
+$case-ico-x: 35px;
+$case-ico-y: 97px;
+$case-ico-offset-x: -35px;
+$case-ico-offset-y: -97px;
+$case-ico-width: 35px;
+$case-ico-height: 33px;
+$case-ico-total-width: 132px;
+$case-ico-total-height: 131px;
+$case-ico-image: '../img/sprite.png';
+$case-ico: (35px, 97px, -35px, -97px, 35px, 33px, 132px, 131px, '../img/sprite.png', 'case-ico', );
+$commers-ico-name: 'commers-ico';
+$commers-ico-x: 97px;
+$commers-ico-y: 34px;
+$commers-ico-offset-x: -97px;
+$commers-ico-offset-y: -34px;
+$commers-ico-width: 35px;
+$commers-ico-height: 34px;
+$commers-ico-total-width: 132px;
+$commers-ico-total-height: 131px;
+$commers-ico-image: '../img/sprite.png';
+$commers-ico: (97px, 34px, -97px, -34px, 35px, 34px, 132px, 131px, '../img/sprite.png', 'commers-ico', );
+$crime-ico-name: 'crime-ico';
+$crime-ico-x: 62px;
+$crime-ico-y: 0px;
+$crime-ico-offset-x: -62px;
+$crime-ico-offset-y: 0px;
+$crime-ico-width: 35px;
+$crime-ico-height: 35px;
+$crime-ico-total-width: 132px;
+$crime-ico-total-height: 131px;
+$crime-ico-image: '../img/sprite.png';
+$crime-ico: (62px, 0px, -62px, 0px, 35px, 35px, 132px, 131px, '../img/sprite.png', 'crime-ico', );
+$hands-ico-name: 'hands-ico';
+$hands-ico-x: 97px;
+$hands-ico-y: 0px;
+$hands-ico-offset-x: -97px;
+$hands-ico-offset-y: 0px;
+$hands-ico-width: 35px;
+$hands-ico-height: 34px;
+$hands-ico-total-width: 132px;
+$hands-ico-total-height: 131px;
+$hands-ico-image: '../img/sprite.png';
+$hands-ico: (97px, 0px, -97px, 0px, 35px, 34px, 132px, 131px, '../img/sprite.png', 'hands-ico', );
+$home-ico-name: 'home-ico';
+$home-ico-x: 70px;
+$home-ico-y: 62px;
+$home-ico-offset-x: -70px;
+$home-ico-offset-y: -62px;
+$home-ico-width: 27px;
+$home-ico-height: 35px;
+$home-ico-total-width: 132px;
+$home-ico-total-height: 131px;
+$home-ico-image: '../img/sprite.png';
+$home-ico: (70px, 62px, -70px, -62px, 27px, 35px, 132px, 131px, '../img/sprite.png', 'home-ico', );
+$people-ico-name: 'people-ico';
+$people-ico-x: 35px;
+$people-ico-y: 62px;
+$people-ico-offset-x: -35px;
+$people-ico-offset-y: -62px;
+$people-ico-width: 35px;
+$people-ico-height: 35px;
+$people-ico-total-width: 132px;
+$people-ico-total-height: 131px;
+$people-ico-image: '../img/sprite.png';
+$people-ico: (35px, 62px, -35px, -62px, 35px, 35px, 132px, 131px, '../img/sprite.png', 'people-ico', );
+$planet-ico-name: 'planet-ico';
+$planet-ico-x: 0px;
+$planet-ico-y: 0px;
+$planet-ico-offset-x: 0px;
+$planet-ico-offset-y: 0px;
+$planet-ico-width: 62px;
+$planet-ico-height: 62px;
+$planet-ico-total-width: 132px;
+$planet-ico-total-height: 131px;
+$planet-ico-image: '../img/sprite.png';
+$planet-ico: (0px, 0px, 0px, 0px, 62px, 62px, 132px, 131px, '../img/sprite.png', 'planet-ico', );
+$resident-ico-name: 'resident-ico';
+$resident-ico-x: 0px;
+$resident-ico-y: 97px;
+$resident-ico-offset-x: 0px;
+$resident-ico-offset-y: -97px;
+$resident-ico-width: 35px;
+$resident-ico-height: 34px;
+$resident-ico-total-width: 132px;
+$resident-ico-total-height: 131px;
+$resident-ico-image: '../img/sprite.png';
+$resident-ico: (0px, 97px, 0px, -97px, 35px, 34px, 132px, 131px, '../img/sprite.png', 'resident-ico', );
+$search-ico-name: 'search-ico';
+$search-ico-x: 97px;
+$search-ico-y: 68px;
+$search-ico-offset-x: -97px;
+$search-ico-offset-y: -68px;
+$search-ico-width: 19px;
+$search-ico-height: 19px;
+$search-ico-total-width: 132px;
+$search-ico-total-height: 131px;
+$search-ico-image: '../img/sprite.png';
+$search-ico: (97px, 68px, -97px, -68px, 19px, 19px, 132px, 131px, '../img/sprite.png', 'search-ico', );
+$spritesheet-width: 132px;
+$spritesheet-height: 131px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: ($admin-ico, $apartment-ico, $case-ico, $commers-ico, $crime-ico, $hands-ico, $home-ico, $people-ico, $planet-ico, $resident-ico, $search-ico, );
+$spritesheet: (132px, 131px, '../img/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

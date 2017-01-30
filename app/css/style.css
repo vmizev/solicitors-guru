@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic,cyrillic-ext");
 body {
   margin: 0;
   padding: 0;
@@ -110,3 +111,154 @@ button {
   border: none;
   cursor: pointer; }
 
+.header .header-nav::before, .inner::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-left: -4px; }
+
+.header .header-nav > *, .inner > * {
+  display: inline-block;
+  vertical-align: middle; }
+
+.container {
+  width: 1040px;
+  margin: 0 auto; }
+
+.icon {
+  display: inline-block; }
+
+.form-control {
+  display: inline-block;
+  height: 57px;
+  padding: 0 15px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  color: #7e878d;
+  font-size: 16px; }
+
+.form-btn {
+  display: inline-block;
+  height: 57px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  background: #ef6223;
+  padding: 0 27px;
+  text-transform: uppercase; }
+  .form-btn:hover {
+    background: #d0551e; }
+
+.header {
+  height: 80px;
+  width: 100%;
+  background: #fff; }
+  .header .logo {
+    float: left;
+    margin-top: 15px; }
+  .header .header-nav {
+    float: right;
+    margin: 27px 200px 0 0; }
+    .header .header-nav li {
+      display: inline-block; }
+      .header .header-nav li a {
+        font-size: 16px; }
+        .header .header-nav li a:hover {
+          color: #ef6223; }
+        .header .header-nav li a span.search-ico {
+          margin-left: 12px; }
+    .header .header-nav li + li {
+      margin-left: 28px; }
+
+.admin-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -70px -97px;
+  width: 29px;
+  height: 30px; }
+
+.apartment-ico {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -62px;
+  width: 35px;
+  height: 35px; }
+
+.case-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -35px -97px;
+  width: 35px;
+  height: 33px; }
+
+.commers-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -97px -34px;
+  width: 35px;
+  height: 34px; }
+
+.crime-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -62px 0px;
+  width: 35px;
+  height: 35px; }
+
+.hands-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -97px 0px;
+  width: 35px;
+  height: 34px; }
+
+.home-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -70px -62px;
+  width: 27px;
+  height: 35px; }
+
+.people-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -35px -62px;
+  width: 35px;
+  height: 35px; }
+
+.planet-ico {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 62px;
+  height: 62px; }
+
+.resident-ico {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -97px;
+  width: 35px;
+  height: 34px; }
+
+.search-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -97px -68px;
+  width: 19px;
+  height: 19px; }
+
+.inner {
+  height: -webkit-calc( 100vh - 80px);
+  height: calc( 100vh - 80px);
+  background: url("../img/inner-bg.jpg") no-repeat top center;
+  background-size: cover;
+  text-align: center; }
+  .inner .inner-block {
+    color: #fff; }
+    .inner .inner-block h1 {
+      font-size: 72px;
+      font-weight: 700;
+      margin-bottom: 30px; }
+    .inner .inner-block > span {
+      font-size: 28px;
+      font-weight: 300; }
+    .inner .inner-block .inner-form {
+      padding: 25px 37px;
+      background: rgba(0, 0, 0, 0.45);
+      margin-top: 40px; }
+      .inner .inner-block .inner-form .first-form .form-control {
+        width: 325px; }
+      .inner .inner-block .inner-form input + input, .inner .inner-block .inner-form select + input {
+        margin-left: 4px; }
