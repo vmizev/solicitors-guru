@@ -183,10 +183,8 @@
 		.news-post{
 			float: left;
 			width: 33.333%;
-
-			& + .news-post{
-				padding-left: 25px;
-			}
+			padding: 0 10px;
+			
 			.news-content{
 				background: #fff;
 				border-top: 6px solid #90bed5;
