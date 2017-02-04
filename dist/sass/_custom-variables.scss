@@ -1,20 +1,30 @@
 // general font family
 $generalFont: 'Open Sans';
 // general font size
-$generalFontSize: 12px;
+$generalFontSize: 14px;
 // general text color
 $generalColor: #000;
 // desktop container width
-$desctopContainerWidth: 1040px;
+$desctopContainerWidth: 1060px;
 // desktop header height
 $desktopHeaderHeight: 80px;
 
 // STANDART COLOR
 // general orange color
 $generalOrange: #ef6223;
+$generalBlue: #30436b;
 // general orange color hover
 $generalOrangeHover: #d0551e;
+
 // general body bg
 $bodyBg: #fff;
 // general form element text color
 $formControlTextColor: #7e878d;
+
+// general color for simple text
+$simpleTextColor: #5a6464;
+
+// grey bg
+$greyBg: #f6f8f8;
+// blue bg
+$blueBg: $generalBlue;

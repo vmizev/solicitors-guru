@@ -29,6 +29,7 @@
 			padding: 25px 37px;
 			background: rgba(0, 0, 0, .45);
 			margin-top: 40px;
+			text-align: left;
 
 			.first-form {
 				.form-control{
@@ -40,11 +41,260 @@
 					margin-left: 4px;
 				}
 			}
+			.more-option-btn {
+				display: inline-block;
+				cursor: pointer;
+				margin-top: 10px;
+			}
+			.more-options-form {
+				display: none;
+
+				.input-group{
+					margin-top: 15px;
+					label {
+						font-size: 16px;
+						
+					}
+					select {
+						width: 220px;
+					}
+				}
+			}
 		}
 	}
 }
 
+.service-wrap{
+	padding: 55px 0 70px 0;
+	overflow: hidden;
 
+	.service-item{
+		float: left;
+		padding: 0 10px;
+		width: 33.333%;
+		height: 170px;
+		overflow: hidden;
+		margin-bottom: 30px;
+
+		.title{
+			color: $generalOrange;
+			font-size: 20px;
+			margin: 10px 0;
+		}
+		p {
+			width: 70%;
+			font-size: 16px;
+			line-height: 20px;
+			color: #6c767e;
+		}
+	}
+}
+
+.carousel-inner {
+	margin-bottom: 73px;
+
+	.title{
+		font-size: 24px;
+		font-weight: 600;
+		color: #515a60;
+		margin-bottom: 15px;
+	}
+	.carousel-wrap {
+		padding: 15px 0;
+		border-top: 2px solid #e2e6e7;
+		border-bottom: 2px solid #e2e6e7;		
+
+		.slick-arrow{
+		    position: absolute;
+		    top: 0;
+		    z-index: 989;
+		    background: transparent;
+		    border: none;
+		    color: transparent;
+		    height: 22px;
+		    width: 14px;    
+		}
+		.slick-prev {
+		    left: -60px;
+		}
+		.slick-next {
+		    right: -60px;
+		}
+		.slick-arrow::before, .slick-arrow::after {
+		    content: '';
+		    display: inline-block;
+		    width: 14px;
+		    height: 2px;
+		    background: $generalOrange;
+		    position: absolute;
+		}
+		.slick-prev::before {
+		    top: 10px;
+		    left: 0;
+		    transform: rotate(38deg);
+		}
+		.slick-prev::after {
+		    bottom: 18px;
+		    left: 0;
+		    transform: rotate(-38deg);
+		}
+		.slick-next::before {
+		    top: 10px;
+		    right: 0;
+		    transform: rotate(-38deg);
+		}
+		.slick-next::after {
+		    bottom: 18px;
+		    right: 0px;
+		    transform: rotate(38deg);
+		}	
+		.slick-slide a{
+			color: $generalOrange;
+			&:hover{
+				color: $generalBlue;
+			}
+		}		
+	}
+}
+
+.category-wrap{
+	padding: 60px 0 75px 0;
+	overflow: hidden;
+	
+	& > .container > .title{
+		color: #fff;
+		font-size: 24px;
+		font-weight: 600;
+		text-align: center;
+	}
+	.news-row{		
+		overflow: hidden;
+		margin: 50px 0;
+		.news-post{
+			float: left;
+			width: 33.333%;
+
+			& + .news-post{
+				padding-left: 25px;
+			}
+			.news-content{
+				background: #fff;
+				border-top: 6px solid #90bed5;
+				border-radius: 1px;
+				padding: 20px;
+
+				.title{
+					font-size: 20px;
+					font-weight: 600;
+					color: #515a60;
+					margin-bottom: 13px;
+				}
+				p {
+					color: #6c767e;
+					font-size: 16px;
+					line-height: 20px;
+
+					a{
+						font-weight: 600;
+					}
+				}
+			}
+		}		
+	}
+	.category-btn{
+		text-align: center;
+		margin-top: 44px;
+		.btn{
+			margin: 0 12px;
+		}
+	}	
+}
+
+.counties-wrap{	
+	padding: 57px 0 80px 0;
+
+	.title {
+		font-size: 38px;
+		line-height: 32px;
+		color: #515a60;
+		font-weight: 600;
+		margin-bottom: 70px;
+		text-align: center;
+	}
+	.counties-btn{
+		text-align: center;
+		margin-bottom: 50px;
+		.btn {
+			margin: 0 8px 28px 0;
+		}
+	}
+	.find-in {
+		@extend %vertical-align;
+		padding: 0 27px;
+		height: 103px;
+		border-radius: 1px;
+		overflow: hidden;
+
+		.icon {
+			margin-right: 27px;
+		}
+		.find-text{
+			font-weight: 600;
+			font-size: 30px;
+			color: #fff;
+		}
+		.link-block {
+			float: right;
+			
+			a {		
+				color: #fff;
+				
+				.name {
+					font-size: 24px;
+				}
+				.sub{
+					font-size: 14px;
+					color: #a54619;
+					&:hover{
+						color: #fff;
+					}
+				}
+				
+				span{
+					
+				}
+			}			
+		}
+	}
+}
+
+.login-wrap {
+	height: 160px;
+
+	.login-inner {
+		color: #fff;
+		overflow: hidden;
+
+
+		.text-block{
+			width: 500px;
+			.title{
+				font-size: 32px;
+				font-weight: 600;
+			}
+			span {
+				font-size: 16px;
+				color: #dde3ee;
+			}
+		}
+		.btn-block{
+			float: right;
+			a {
+				margin-left: 45px;
+			}
+		}
+	}
+}
 
 
 

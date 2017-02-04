@@ -13,3 +13,27 @@
 		vertical-align: middle;
 	}
 }
+
+// bg color or text color classes
+.grey-bg{
+	 background: $greyBg; 
+}
+.blue-bg{
+	 background: $blueBg; 
+}
+.orange-bg {
+	background: $generalOrange;
+}
+.blue-text{
+	color: $generalBlue;
+}
+.orange-text{
+	color: $generalOrange;
+}
+.center-text {
+	text-align: center;
+}
+.sub{
+	font-size: 12px;
+	color: inherit;
+}
