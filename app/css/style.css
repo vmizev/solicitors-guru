@@ -365,10 +365,17 @@ input[type="checkbox"] {
         display: none; }
         .inner .inner-block .inner-form .more-options-form .input-group {
           margin-top: 15px; }
-          .inner .inner-block .inner-form .more-options-form .input-group label {
-            font-size: 16px; }
-          .inner .inner-block .inner-form .more-options-form .input-group select {
-            width: 220px; }
+          .inner .inner-block .inner-form .more-options-form .input-group > label {
+            margin-right: 50px; }
+          .inner .inner-block .inner-form .more-options-form .input-group .input-item {
+            width: 33%;
+            display: inline-block; }
+            .inner .inner-block .inner-form .more-options-form .input-group .input-item label {
+              font-size: 16px;
+              display: block;
+              margin-bottom: 8px; }
+            .inner .inner-block .inner-form .more-options-form .input-group .input-item input {
+              width: 97%; }
 
 .service-wrap {
   padding: 55px 0 70px 0;
@@ -553,6 +560,6 @@ input[type="checkbox"] {
         color: #dde3ee; }
     .login-wrap .login-inner .btn-block {
       float: right;
-      width: 45%; }
+      padding: 20px 0; }
       .login-wrap .login-inner .btn-block a {
         margin-left: 45px; }
