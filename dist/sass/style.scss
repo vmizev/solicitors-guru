@@ -5,6 +5,8 @@
 @import "layout";
 @import "sprite";
 @include sprites($spritesheet-sprites);
+@import "slick";
+@import "slicknav";
 
 .inner{
 	@extend %vertical-align;
@@ -12,6 +14,10 @@
 	background: url('../img/inner-bg.jpg') no-repeat top center;
 	background-size: cover;
 	text-align: center;
+	@media (max-width: 959px){
+		height: auto;
+		padding: 30px 0;
+	}
 
 	.inner-block{
 		color: #fff;
@@ -20,25 +26,50 @@
 			font-size: 72px;
 			font-weight: 700;
 			margin-bottom: 30px;
+			@media (max-width: 767px){
+				font-size: 60px;
+			}
+			@media (max-width: 479px){
+				font-size: 50px;
+			}
 		}
 		& > span {
 			font-size: 28px;
 			font-weight: 300;
+			@media (max-width: 767px){
+				font-size: 24px;
+			}
 		}
 		.inner-form{
 			padding: 25px 37px;
 			background: rgba(0, 0, 0, .45);
 			margin-top: 40px;
 			text-align: left;
+			font-size: 16px;
+			@media (max-width: 479px){
+				margin-top: 20px;
+			}
 
 			.first-form {
 				.form-control{
 					width: 325px;
+					@media (max-width: 959px){
+						width: 100%;
+					}
+				}
+				.form-btn{
+					@media (max-width: 959px){
+						width: 100%;
+					}
 				}
 			}
 			input, select{
 				& + input{
 					margin-left: 4px;
+					@media (max-width: 959px){
+						margin-left: 0;
+						margin-top: 10px;
+					}
 				}
 			}
 			.more-option-btn {
@@ -53,11 +84,18 @@
 					margin-top: 15px;
 					& > label{
 						margin-right: 50px;
+						@media (max-width: 959px){
+							margin-right: 20px;
+						}
 					}
 
 					.input-item{
-						width: 33%;
+						width: 32%;
 						display: inline-block;
+						@media (max-width: 959px){
+							width: 100%;
+							margin-top: 15px;
+						}
 
 						label {
 							font-size: 16px;
@@ -67,6 +105,22 @@
 						input {
 							width: 97%;
 						}				
+					}
+					.checkbox-item{
+						display: inline-block;
+						@media (max-width: 767px){
+							display: block;
+						}
+
+						& + .checkbox-item {
+							margin-left: 50px;
+							@media (max-width: 959px){
+								margin-left: 20px;
+							}
+							@media (max-width: 767px){
+								margin: 15px 0 0 0;
+							}
+						}
 					}				
 				}
 			}
@@ -82,9 +136,17 @@
 		float: left;
 		padding: 0 10px;
 		width: 33.333%;
-		height: 170px;
+		height: 180px;
 		overflow: hidden;
 		margin-bottom: 30px;
+		@media (max-width: 959px){
+			width: 50%;
+		}	
+		@media (max-width: 767px){
+			width: 100%;
+			height: auto;
+		}	
+
 
 		.title{
 			color: $generalOrange;
@@ -96,12 +158,22 @@
 			font-size: 16px;
 			line-height: 20px;
 			color: #6c767e;
+			@media (max-width: 1074px){
+				width: 90%;
+			}
+			@media (max-width: 767px){
+				width: 97%;
+			}
 		}
 	}
 }
 
 .carousel-inner {
 	margin-bottom: 73px;
+	@media (max-width: 767px){
+		margin-bottom: 35px;
+		padding: 0 5px;
+	}
 
 	.title{
 		font-size: 24px;
@@ -112,58 +184,7 @@
 	.carousel-wrap {
 		padding: 15px 0;
 		border-top: 2px solid #e2e6e7;
-		border-bottom: 2px solid #e2e6e7;		
-
-		.slick-arrow{
-		    position: absolute;
-		    top: 0;
-		    z-index: 989;
-		    background: transparent;
-		    border: none;
-		    color: transparent;
-		    height: 22px;
-		    width: 14px;    
-		}
-		.slick-prev {
-		    left: -60px;
-		}
-		.slick-next {
-		    right: -60px;
-		}
-		.slick-arrow::before, .slick-arrow::after {
-		    content: '';
-		    display: inline-block;
-		    width: 14px;
-		    height: 2px;
-		    background: $generalOrange;
-		    position: absolute;
-		}
-		.slick-prev::before {
-		    top: 10px;
-		    left: 0;
-		    transform: rotate(38deg);
-		}
-		.slick-prev::after {
-		    bottom: 18px;
-		    left: 0;
-		    transform: rotate(-38deg);
-		}
-		.slick-next::before {
-		    top: 10px;
-		    right: 0;
-		    transform: rotate(-38deg);
-		}
-		.slick-next::after {
-		    bottom: 18px;
-		    right: 0px;
-		    transform: rotate(38deg);
-		}	
-		.slick-slide a{
-			color: $generalOrange;
-			&:hover{
-				color: $generalBlue;
-			}
-		}		
+		border-bottom: 2px solid #e2e6e7;	
 	}
 }
 
@@ -184,6 +205,14 @@
 			float: left;
 			width: 33.333%;
 			padding: 0 10px;
+			@media (max-width: 959px){
+				width: 100%;
+			}
+			& + .news-post {
+				@media (max-width: 959px){
+					margin-top: 15px;
+				}
+			}
 			
 			.news-content{
 				background: #fff;
@@ -207,19 +236,30 @@
 					}
 				}
 			}
-		}		
+		}
+
 	}
 	.category-btn{
 		text-align: center;
 		margin-top: 44px;
 		.btn{
 			margin: 0 12px;
+			@media (max-width: 767px){
+				margin: 10px 5px;
+			}
+			@media (max-width: 479px){
+				margin: 10px 0;
+    			display: block;
+			}
 		}
 	}	
 }
 
 .counties-wrap{	
 	padding: 57px 0 80px 0;
+	@media (max-width: 767px){
+		padding: 35px 0;
+	}
 
 	.title {
 		font-size: 38px;
@@ -232,6 +272,9 @@
 	.counties-btn{
 		text-align: center;
 		margin-bottom: 50px;
+		@media (max-width: 767px){
+			margin-bottom: 0;			
+		}
 		.btn {
 			margin: 0 8px 28px 0;
 		}
@@ -242,18 +285,48 @@
 		height: 103px;
 		border-radius: 1px;
 		overflow: hidden;
+		@media (max-width: 959px){
+			padding: 0 10px;
+		}
+		@media (max-width: 767px){
+			padding: 20px 0px 0 0px;
+			height: auto;
+		}
 
 		.icon {
 			margin-right: 27px;
+			@media (max-width: 959px){
+				margin-right: 10px;
+			}
 		}
-		.find-text{
-			font-weight: 600;
-			font-size: 30px;
-			color: #fff;
+		.title-wrap{
+			@extend %vertical-align;
+			width: 50%;
+			display: inline-block;
+			@media (max-width: 767px){
+				width: 100%;
+				text-align: center;
+				margin-bottom: 10px;
+			}
+			.find-text{
+				font-weight: 600;
+				font-size: 30px;
+				color: #fff;
+				@media (max-width: 959px){
+					font-size: 20px;
+				}				
+			}			
 		}
+
 		.link-block {
 			float: right;
-			
+			width: 50%;
+			display: inline-block;
+			margin-left: -4px;
+			@media (max-width: 767px){
+				width: 100%;
+			}
+
 			a {		
 				color: #fff;
 				width: 33.3333%;
@@ -261,13 +334,35 @@
 				float: left;
 				padding: 29px 33px;
 				border-left: 1px solid #da5a1f;	
+				@media (max-width: 767px){
+					border-left: none;
+				}
+				&:hover {
+					background: #da5a1f;
+				}
 				&:hover .sub{
 					color: #fff;
-				}			
+				}
+				@media (max-width: 959px){
+					padding: 31px 15px;
+				}
+				@media (max-width: 767px){
+					padding: 24px 15px;
+				}
+				@media (max-width: 479px){				
+				width: 100%;
+				text-align: center;
+				display: block;
+				border-top: 1px solid #da5a1f;
+				}
+
 				.name {
 					font-size: 24px;
 					display: block;
 					margin-bottom: 7px;
+					@media (max-width: 959px){
+						font-size: 20px;
+					}
 				}
 				.sub{
 					font-size: 14px;
@@ -281,6 +376,9 @@
 .login-wrap {
 	height: 160px;
 	padding: 35px 0;
+	@media (max-width: 767px){
+		height: auto;
+	}
 
 	.login-inner {
 		color: #fff;
@@ -289,29 +387,73 @@
 		@extend %vertical-align;
 
 		.text-block{
-			width: 55%;
+			width: 50%;
+			@media (max-width: 959px){
+				padding-right: 10px;
+			}
+			@media (max-width: 767px){
+				width: 100%;
+				text-align: center;
+				margin-bottom: 15px;
+			}
+			@media (max-width: 479px){
+				padding: 0;				
+			}
 			.title{
 				font-size: 32px;
 				font-weight: 600;
 				margin-bottom: 13px;
+				@media (max-width: 959px){
+					font-size: 30px;
+				}
 			}
 			span {
 				font-size: 16px;
 				line-height: 18px;
 				color: #dde3ee;
+				@media (max-width: 959px){
+					font-size: 14px;
+				}
 			}
 		}
 		.btn-block{
-			float: right;
-			padding: 20px 0;
-			a {
-				margin-left: 45px;
+			width: 50%;
+			margin: 20px 0 0 -4px;
+			display: inline-block;
+			text-align: right;
+			@media (max-width: 959px){
+				margin: 0 0 0 -4px;
+			}
+			@media (max-width: 767px){
+				width: 100%;
+				text-align: center;
+			}
+			@media (max-width: 479px){
+				margin-left: 0;				
+			}
+			.btn {
+				@media (max-width: 767px){
+					margin: 10px 5px;
+				}
+				@media (max-width: 479px){
+					margin: 10px 0;
+					display: block;
+					width: 100%;
+				} 
+				& + .btn{
+					margin-left: 45px;
+					@media (max-width: 959px){
+						margin-left: 10px;
+					}
+					@media (max-width: 479px){
+						margin-left: 0;				
+					}
+				}
+				
 			}
 		}
 	}
 }
-
-
 
 
 

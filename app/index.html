@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Solicitors Guru</title>
-	<link rel="stylesheet" href="css/slick.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/jquery.formstyler.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,7 +19,16 @@
 			<ul class="header-nav">
 				<li><a href="#">Articles</a></li>
 				<li><a href="#">Contact</a></li>
-				<li><a href="#"><span class="icon search-ico"></span></a></li>
+				<li class="search">
+					<span class="icon search-ico"></span>
+					<div class="search-block">
+						<form class="search-form">
+							<input type="text" name="search-field" class="form-control" placeholder="Search...">
+							<input type="submit" value="Search" class="form-btn">
+						</form>	
+					</div>
+					
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -58,15 +67,23 @@
 									<input type="text" name="country" class="form-control" placeholder="" id="spa-id">
 								</div>															
 							</div>
-							<div class="input-group">								
-								<input type="checkbox" name="age" id="legal">
-								<label for="legal">Accepts legal aid</label>
-								<input type="checkbox" name="age" id="disabled-access">
-								<label for="disabled-access">Disabled access</label>
-								<input type="checkbox" name="age" id="hearing-loops">
-								<label for="hearing-loops">Hearing loops</label>
-								<input type="checkbox" name="age" id="sign-language">
-								<label for="sign-language">Sign language</label>
+							<div class="input-group">
+								<div class="checkbox-item">
+									<input type="checkbox" name="age" id="legal">
+									<label for="legal">Accepts legal aid</label>	
+								</div>								
+								<div class="checkbox-item">
+									<input type="checkbox" name="age" id="disabled-access">
+									<label for="disabled-access">Disabled access</label>
+								</div>
+								<div class="checkbox-item">
+									<input type="checkbox" name="age" id="hearing-loops">
+									<label for="hearing-loops">Hearing loops</label>	
+								</div>
+								<div class="checkbox-item">
+									<input type="checkbox" name="age" id="sign-language">
+									<label for="sign-language">Sign language</label>	
+								</div>								
 							</div>
 						</div>
 					</form>
@@ -147,6 +164,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="carousel-inner">
 			<div class="container">
 				<div class="title"><span>More Areas of Law <span class="sub">(46)</span></span></div>			
@@ -170,10 +188,10 @@
 						<div><a href="#">Family <span class="sub">(99)</span></a></div>
 						<div><a href="#">Charities <span class="sub">(87)</span></a></div>
 					</div>					
-				</div>
-				
+				</div>				
 			</div>
 		</div>
+
 		<div class="category-wrap blue-bg">
 			<div class="container">
 				<div class="title">
@@ -216,6 +234,7 @@
 				</div>			
 			</div>
 		</div>
+
 		<div class="counties-wrap">
 			<div class="container">
 				<div class="title">
@@ -234,8 +253,11 @@
 					<a href="#" class="btn orange-btn">Nottinghamshire <span class="sub">(726)</span></a>
 				</div>
 				<div class="find-in orange-bg">
-					<span class="icon planet-ico"></span>
-					<span class="find-text">Find a Solicitor In...</span>
+					<div class="title-wrap">
+						<span class="icon planet-ico"></span>
+						<span class="find-text">Find a Solicitor In...</span>	
+					</div>
+					
 					<div class="link-block">
 						<a href="#">
 							<span class="name">England</span>
@@ -298,6 +320,7 @@
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.formstyler.js"></script>
+	<script src="js/jquery.slicknav.js"></script>
 	<script src="js/plugin.js"></script>
 </body>
 </html>

@@ -4,8 +4,14 @@ $generalFont: 'Open Sans';
 $generalFontSize: 14px;
 // general text color
 $generalColor: #000;
+
+// STANDART SIZES
 // desktop container width
-$desctopContainerWidth: 1060px;
+$desktopContainerWidth: 1060px;
+// medium device container width
+$mediumDeviceContainerWidth: 1000px;
+// all device < 1024 container width
+$fullWidthContainerWidth: 100%;
 // desktop header height
 $desktopHeaderHeight: 80px;
 

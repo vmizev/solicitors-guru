@@ -1,0 +1,97 @@
+//colors
+$color_0: rgba(255, 255, 255, 0.75);
+$color_btn: $generalOrange;
+$color_text: #fff;
+$color_shadow: #000;
+$color_bg: #fff;
+$color_hover_bg: $generalOrange;
+$color_hover_text: #fff;
+
+.slicknav_menu {
+	font-size: 30px;
+	box-sizing: border-box;
+	background: $color_bg;
+	padding: 5px;
+	* {
+		box-sizing: border-box;
+	}
+	.slicknav_menutxt {
+		color: $color_text;
+		font-weight: bold;
+		text-shadow: 0 1px 3px $color_shadow;
+	}
+	.slicknav_icon-bar {
+		background-color: $color_text;
+	}
+}
+.slicknav_btn {
+	margin: 5px 5px 6px;
+	text-decoration: none;
+	text-shadow: 0 1px 1px $color_0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-color: $color_btn;
+}
+.slicknav_nav {
+	color: $color_text;
+	margin: 0;
+	padding: 0;
+	font-size: 0.875em;
+	list-style: none;
+	overflow: hidden;
+	position: absolute;
+    left: 0;
+    top: 80px;
+    background: #fff;
+    text-align: center;
+    width: 100%;
+	ul {
+		list-style: none;
+		overflow: hidden;
+		padding: 0;
+		margin: 0 0 0 20px;
+	}
+	.slicknav_row {
+		padding: 5px 10px;
+		margin: 2px 5px;
+		&:hover {
+			-webkit-border-radius: 6px;
+			-moz-border-radius: 6px;
+			border-radius: 6px;
+			background: $color_hover_bg;
+			color: $color_text;
+		}
+	}
+	a {
+		padding: 5px 10px;
+		text-decoration: none;
+		color: $formControlTextColor;
+		line-height: 45px;
+		// color: #fff;
+		font-size: 20px;
+		font-weight: 600;
+		&:hover {
+			background: $color_hover_bg;
+			color: $color_hover_text;
+		}
+	}
+	.slicknav_txtnode {
+		margin-left: 15px;
+	}
+	.slicknav_item a {
+		padding: 0;
+		margin: 0;
+	}
+	.slicknav_parent-link a {
+		padding: 0;
+		margin: 0;
+	}
+}
+.slicknav_brand {
+	color: $color_text;
+	font-size: 18px;
+	line-height: 30px;
+	padding: 7px 12px;
+	height: 44px;
+}
