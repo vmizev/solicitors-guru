@@ -84,6 +84,33 @@
 	.slicknav_parent-link a {
 		display: inline;
 	}
+	.search {
+		.search-ico{
+			@media (max-width: 767px){
+				display: none; 
+			}
+		}
+		.search-block{
+			.search-form{
+				@media (max-width: 767px){
+					text-align: right; 
+				}
+				
+			}
+			.form-control{
+				@media (max-width: 767px){
+					width: 70%; 
+					padding: 0px 40px;
+				}
+			}
+			.form-btn{
+				@media (max-width: 767px){
+					width: 30%;  
+					margin-left: -8px;
+				}
+			}
+		}
+	}
 }
 .slicknav_brand {
 	float: left;

@@ -32,12 +32,18 @@
 			@media (max-width: 479px){
 				font-size: 50px;
 			}
+			@media (max-width: 350px){
+				font-size: 30px;
+			}
 		}
 		& > span {
 			font-size: 28px;
 			font-weight: 300;
 			@media (max-width: 767px){
 				font-size: 24px;
+			}
+			@media (max-width: 479px){
+				font-size: 20px;
 			}
 		}
 		.inner-form{
@@ -268,6 +274,10 @@
 		font-weight: 600;
 		margin-bottom: 70px;
 		text-align: center;
+		@media (max-width: 767px){
+			margin-bottom: 35px;
+			font-size: 32px;
+		}
 	}
 	.counties-btn{
 		text-align: center;
@@ -277,6 +287,10 @@
 		}
 		.btn {
 			margin: 0 8px 28px 0;
+			@media (max-width: 479px){
+				margin: 10px 0;
+    			display: block;
+			}
 		}
 	}
 	.find-in {

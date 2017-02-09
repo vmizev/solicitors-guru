@@ -169,6 +169,9 @@ button {
           border-radius: 2px;
   color: #7e878d;
   font-size: 16px; }
+  @media (max-width: 340px) {
+    .form-control {
+      font-size: 14px; } }
 
 .form-btn {
   display: inline-block;
@@ -183,6 +186,10 @@ button {
   text-transform: uppercase; }
   .form-btn:hover {
     background: #d0551e; }
+  @media (max-width: 479px) {
+    .form-btn {
+      font-size: 13px;
+      padding: 0 9px; } }
 
 input[type="checkbox"] {
   display: none; }
@@ -220,6 +227,11 @@ input[type="checkbox"] {
   .header .logo {
     float: left;
     margin-top: 15px; }
+    @media (max-width: 479px) {
+      .header .logo {
+        width: 160px;
+        margin: 0;
+        padding: 23px 10px; } }
   .header .slicknav_menu {
     display: none; }
     @media (max-width: 767px) {
@@ -228,10 +240,7 @@ input[type="checkbox"] {
         float: right; } }
   .header .header-nav {
     float: right;
-    margin: 27px 200px 0 0; }
-    @media (max-width: 959px) {
-      .header .header-nav {
-        margin: 27px 50px 0 0; } }
+    margin: 27px 20px 0 0; }
     @media (max-width: 767px) {
       .header .header-nav {
         display: none; } }
@@ -239,7 +248,7 @@ input[type="checkbox"] {
       display: inline-block;
       height: 36px;
       line-height: 36px; }
-      .header .header-nav li span.search-ico {
+      .header .header-nav li .search-ico {
         display: inline-block;
         vertical-align: middle;
         cursor: pointer; }
@@ -334,6 +343,9 @@ input[type="checkbox"] {
             margin-left: 15px; } }
   .footer .footer-logo {
     margin-bottom: 30px; }
+    @media (max-width: 479px) {
+      .footer .footer-logo img {
+        width: 150px; } }
   .footer .copy {
     color: #7d858b;
     font-size: 14px; }
@@ -638,6 +650,20 @@ input[type="checkbox"] {
     display: block; }
   .slicknav_nav .slicknav_parent-link a {
     display: inline; }
+  @media (max-width: 767px) {
+    .slicknav_nav .search .search-ico {
+      display: none; } }
+  @media (max-width: 767px) {
+    .slicknav_nav .search .search-block .search-form {
+      text-align: right; } }
+  @media (max-width: 767px) {
+    .slicknav_nav .search .search-block .form-control {
+      width: 70%;
+      padding: 0px 40px; } }
+  @media (max-width: 767px) {
+    .slicknav_nav .search .search-block .form-btn {
+      width: 30%;
+      margin-left: -8px; } }
 
 .slicknav_brand {
   float: left; }
@@ -647,7 +673,7 @@ input[type="checkbox"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #fff;
-  padding: 5px; }
+  padding: 8px; }
   .slicknav_menu * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
@@ -740,12 +766,18 @@ input[type="checkbox"] {
       @media (max-width: 479px) {
         .inner .inner-block h1 {
           font-size: 50px; } }
+      @media (max-width: 350px) {
+        .inner .inner-block h1 {
+          font-size: 30px; } }
     .inner .inner-block > span {
       font-size: 28px;
       font-weight: 300; }
       @media (max-width: 767px) {
         .inner .inner-block > span {
           font-size: 24px; } }
+      @media (max-width: 479px) {
+        .inner .inner-block > span {
+          font-size: 20px; } }
     .inner .inner-block .inner-form {
       padding: 25px 37px;
       background: rgba(0, 0, 0, 0.45);
@@ -921,6 +953,10 @@ input[type="checkbox"] {
     font-weight: 600;
     margin-bottom: 70px;
     text-align: center; }
+    @media (max-width: 767px) {
+      .counties-wrap .title {
+        margin-bottom: 35px;
+        font-size: 32px; } }
   .counties-wrap .counties-btn {
     text-align: center;
     margin-bottom: 50px; }
@@ -929,6 +965,10 @@ input[type="checkbox"] {
         margin-bottom: 0; } }
     .counties-wrap .counties-btn .btn {
       margin: 0 8px 28px 0; }
+      @media (max-width: 479px) {
+        .counties-wrap .counties-btn .btn {
+          margin: 10px 0;
+          display: block; } }
   .counties-wrap .find-in {
     padding: 0 27px;
     height: 103px;
